@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+  body{
+    background-color: black;
+  }
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+h1,h2{
+  color: red;
+}
+.container > div {
+  width: 100px;
+  margin: 30px;
+  text-align: center;
+ 
+}
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #f80c0c;
+}
+span{
+  font-size: 14px;
+  font-weight: bold;
+}
+.card-subtitle{
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 5px rgb(31, 19, 19)
+}
+.card{
+  box-shadow: 0 4px 7px 0 white;
+  transition: transform .2s;
+  
+}
+.card:hover{
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.241);
+  transform: scale(1.1);
+}
+.txt{
+  border: 1px solid red;
+  padding:2px 4px 2px 1px;
+ 
+}
+@media (min-width: 992px)
+{
+
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 755px;
+  }
+}
+
+
